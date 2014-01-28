@@ -19,6 +19,10 @@
 		26B9FEED1892EAB50041D8AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B9FED51892EAB50041D8AF /* UIKit.framework */; };
 		26B9FEF51892EAB50041D8AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26B9FEF31892EAB50041D8AF /* InfoPlist.strings */; };
 		26B9FEF71892EAB50041D8AF /* CPTodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B9FEF61892EAB50041D8AF /* CPTodoListTests.m */; };
+		26B9FF0D189303E00041D8AF /* TodoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B9FF0B189303E00041D8AF /* TodoListTableViewController.m */; };
+		26B9FF0E189303E00041D8AF /* TodoListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B9FF0C189303E00041D8AF /* TodoListTableViewController.xib */; };
+		26B9FF13189304C20041D8AF /* EditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B9FF12189304C20041D8AF /* EditableCell.m */; };
+		26B9FF15189304D20041D8AF /* EditableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B9FF14189304D20041D8AF /* EditableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		26B9FEF21892EAB50041D8AF /* CPTodoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CPTodoListTests-Info.plist"; sourceTree = "<group>"; };
 		26B9FEF41892EAB50041D8AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26B9FEF61892EAB50041D8AF /* CPTodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPTodoListTests.m; sourceTree = "<group>"; };
+		26B9FF0A189303E00041D8AF /* TodoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoListTableViewController.h; sourceTree = "<group>"; };
+		26B9FF0B189303E00041D8AF /* TodoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoListTableViewController.m; sourceTree = "<group>"; };
+		26B9FF0C189303E00041D8AF /* TodoListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoListTableViewController.xib; sourceTree = "<group>"; };
+		26B9FF11189304C20041D8AF /* EditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCell.h; sourceTree = "<group>"; };
+		26B9FF12189304C20041D8AF /* EditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCell.m; sourceTree = "<group>"; };
+		26B9FF14189304D20041D8AF /* EditableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,12 @@
 				26B9FEE11892EAB50041D8AF /* AppDelegate.m */,
 				26B9FEE31892EAB50041D8AF /* Images.xcassets */,
 				26B9FED81892EAB50041D8AF /* Supporting Files */,
+				26B9FF0A189303E00041D8AF /* TodoListTableViewController.h */,
+				26B9FF0B189303E00041D8AF /* TodoListTableViewController.m */,
+				26B9FF0C189303E00041D8AF /* TodoListTableViewController.xib */,
+				26B9FF11189304C20041D8AF /* EditableCell.h */,
+				26B9FF12189304C20041D8AF /* EditableCell.m */,
+				26B9FF14189304D20041D8AF /* EditableCell.xib */,
 			);
 			path = CPTodoList;
 			sourceTree = "<group>";
@@ -219,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B9FF0E189303E00041D8AF /* TodoListTableViewController.xib in Resources */,
 				26B9FEDC1892EAB50041D8AF /* InfoPlist.strings in Resources */,
 				26B9FEE41892EAB50041D8AF /* Images.xcassets in Resources */,
+				26B9FF15189304D20041D8AF /* EditableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B9FF0D189303E00041D8AF /* TodoListTableViewController.m in Sources */,
 				26B9FEE21892EAB50041D8AF /* AppDelegate.m in Sources */,
 				26B9FEDE1892EAB50041D8AF /* main.m in Sources */,
+				26B9FF13189304C20041D8AF /* EditableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +461,7 @@
 				26B9FEFC1892EAB50041D8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26B9FEFD1892EAB50041D8AF /* Build configuration list for PBXNativeTarget "CPTodoListTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +470,7 @@
 				26B9FEFF1892EAB50041D8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
